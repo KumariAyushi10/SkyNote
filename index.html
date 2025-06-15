@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css" />
+     <link rel="icon" href="assets/logo.png" type="image/png" />
+     <title>Skynote</title>
+</head>
+<body>
+     <div class="mode-toggle">
+          <label>
+               <input type="checkbox" id="theme-toggle" />
+               <span>🌙</span>
+          </label>
+     </div>
+
+     <div class="container">
+          <h1 id="greeting">Welcome to Skynote ☁️</h1>
+
+          <form class="search-box" id="search-box">
+               <input type="text" name="location" placeholder="Search city..." id="location-input" />
+               <button type="submit" aria-label="Search">
+                    🔍
+               </button>
+          </form>
+
+          <p class="errTxt" id="errTxt"></p>
+
+          <div class="weather-details" id="weather-details">
+               <h2>Weather in <span id="location">Location Name</span></h2>
+               <div class="grid">
+                    <div class="temperature">
+                         <img src="assets/clear.svg" alt="weather-icon" width="150" height="150" id="weather-condition-icon" />
+                         <p class="temperatureTxt">
+                              <span id="temperature">0</span>°C
+                         </p>
+                         <p id="weather-condition-name">Clear</p>
+                    </div>
+                    <ul class="info">
+                         <li><img src="assets/humidity.svg" alt="humidity" width="64" height="64" /><span id="humidity">0</span>%</li>
+                         <li><img src="assets/wind.svg" alt="wind-speed" width="64" height="64" /><span id="wind-speed">0</span>km/h</li>
+                    </ul>
+               </div>
+               <h2>7-Day Forecast</h2>
+               <div class="daily-cards" id="daily-forecast"></div>
+          </div>
+     </div>
+
+     <p class="attr">
+          Image by <a href="https://pixabay.com/users/elg21-3764790/">Enrique</a> from <a href="https://pixabay.com/">Pixabay</a>
+     </p>
+
+     <script src="script.js"></script>
+</body>
+</html>
